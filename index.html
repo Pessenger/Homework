@@ -1,64 +1,68 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>hw4</title>
-    
-<link rel="stylesheet" type="text/css" href="style.css">
+    <title>hw6</title>
+    <link rel="stylesheet" href="bootstrap.css"> </head>
 
-</head>
 <body>
-
-<div class="row">
-<div class="header">header</div>
-</div>
-
-<div class="row">
-<div class="nav">nav</div>
-</div>
-
-   <div class="row">
-    <div class="sidebar">sidebar</div>
-    <div class="main">main</div>
-</div>
-
-<div class="row">
-<div class="footer">footer</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-
-<ul class="navi">
-  <li>沙發
-    <ul class="submenu">
-       <li>單人沙發</li><li>雙人沙發</li><li>三人沙發</li>
-    </ul>
-  </li>
-  
-  <li>椅
-    <ul class="submenu">
-       <li>工業風復古椅</li><li>北歐風餐椅</li><li>吧台椅</li><li>長凳</li>
-    </ul>
-  </li>
-
-   <li>桌
-    <ul class="submenu">
-       <li>餐桌</li><li>茶几</li><li>書桌</li><li>吧台桌</li><li>鏡台</li>
-    </ul>
-  </li>
-</ul> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>    
-
-</body>
+    <div class="container">
+       <h1>註冊表單</h1>
+        <br>
+        <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSc32-qv2-Ej1AXF3pPDVA1tXBcoit0z6U3VHGWM15VLommyxw/formResponse">
+            <form>
+                <div class="form-group">
+                    <label>姓名</label>
+                    <input type="text" class="form-control" placeholder="Your Name" name="name"> </div>
+                    <br>
+                <div class="form-group">
+                    <label>性別</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" value="Male">Male</label>
+                            
+                        <label>
+                            <input type="radio" name="gender" value="Female">Female</label>
+                    
+                           <label>
+                            <input type="radio" name="gender" value="Other">Other</label>
+                            
+                            
+                            
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>電子郵件</label>
+                    
+                        <input type="email" class="form-control" placeholder="Your Email" name="Email">
+                      
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>密碼</label>
+                    <br>
+                        <input type="password" class="form-control" placeholder="Your Password" name="Password"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>興趣</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="" value="reading">閱讀 </label>
+                        <label>
+                            <input type="checkbox" name="" value="exercise">運動 </label>
+                        <label>
+                            <input type="checkbox" name="" value="Internet">上網 </label>
+                        <label>
+                            <input type="checkbox" name="" value="shopping">購物 </label>
+                    </div>
+                </div>
+                <br>
+                <button  type="submit" class="btn btn-success">送出</button>
+            </form>
+        </form>
+    </div>
+    </body>
 </html>
